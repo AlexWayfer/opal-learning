@@ -1,0 +1,31 @@
+[data-scope="categories"] {
+	@include user-select(none);
+
+	[data-scope="item"] {
+		padding: 0.4em 0.8em;
+		cursor: pointer;
+
+		&:hover {
+			background-color: lighten($link-color, 47.5%);
+		}
+
+		&.active {
+			// font-weight: bold;
+			text-shadow: 0 0 0.05em;
+			background-color: lighten($link-color, 42.5%);
+		}
+
+		&:not(.active) {
+			// letter-spacing: 0.035em;
+		}
+
+		&.reset a {
+			border-bottom: 1px dashed;
+		}
+
+		& a {
+			display: inline-block;
+			padding: 0.1em 0.2em;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+<section class="column">
+	<h1 @click="current = null">Bookmarks</h1>
+	<table>
+		<thead>
+			<th>Title</th>
+			<th class="text-center">Actions</th>
+		</thead>
+		<tbody data-scope="bookmarks">
+			<%= render 'bookmark' %>
+		</tbody>
+	</table>
+</section>

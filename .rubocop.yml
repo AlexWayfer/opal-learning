@@ -1,0 +1,19 @@
+## Indentation
+Style/Tab:
+  Enabled: false
+Style/IndentationWidth:
+  Enabled: false
+Style/CommentIndentation:
+  Enabled: false
+Style/IndentHash:
+  Enabled: false
+Style/FirstParameterIndentation:
+  Enabled: false
+Style/AccessModifierIndentation:
+  Enabled: false
+
+## Opal specific
+Style/MutableConstant:
+  Enabled: false
+AllCops:
+  TargetRubyVersion: 2.2

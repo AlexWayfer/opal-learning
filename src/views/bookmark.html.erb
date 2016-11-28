@@ -1,0 +1,13 @@
+<tr data-scope="item">
+	<td>
+		<a data-attr-href="url" target="_blank" data-text="title">
+			<%= render 'symbols/_external_link' %>
+		</a>
+	</td>
+	<td class="text-center">
+		<div v-if="!editing">
+			<button @click="editing = true">Edit</button>
+			<button @click="editing = true">Delete</button>
+		</div>
+	</td>
+</tr>

@@ -1,0 +1,10 @@
+$text-color: #34495e;
+$link-color: #42b983;
+$button-backgroud: #4fc08d;
+
+@mixin user-select($val) {
+	-webkit-user-select: $val;
+	-moz-user-select: $val;
+	-ms-user-select: $val;
+	user-select: $val;
+}

@@ -1,0 +1,64 @@
+@import 'variables';
+
+body {
+	color: $text-color;
+
+	& a {
+		color: $link-color;
+		text-decoration: none;
+
+		&:hover {
+			// color: lighten($link-color, 30%);
+		}
+
+		&[target="_blank"] > .external-link-symbol {
+			fill: desaturate($link-color, 50%);
+		}
+	}
+
+	& button {
+		color: #fff;
+		padding: 0.4em 0.8em;
+		background: $button-backgroud;
+		border: 1px solid darken($button-backgroud, 10%);
+		border-radius: 5px;
+		cursor: pointer;
+
+		&:active {
+			background: darken($button-backgroud, 10%);
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	ul {
+		padding-left: 25px;
+	}
+
+	table {
+		border-collapse: collapse;
+
+		& tr:nth-of-type(odd) {
+			background: #fcfcfc;
+		}
+
+		& td,
+		& th {
+			padding: 0.4em 0.8em;
+			border: 1px solid #dedede;
+		}
+	}
+
+	& input {
+		&[type="text"],
+		&[type="url"] {
+			margin: 0.3em 0;
+			padding: 0.4em 0.8em;
+			font-size: 90%;
+			border: 1px solid #bbb;
+			border-radius: 4px;
+		}
+	}
+}

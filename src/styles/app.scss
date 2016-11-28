@@ -1,0 +1,16 @@
+@import 'helper';
+@import 'branding';
+
+[data-scope="app"] {
+	@import 'symbols';
+	@import 'categories';
+
+	display: flex;
+	flex-wrap: wrap;
+	font-family: sans-serif;
+
+	.column {
+		padding-left: 1rem;
+		margin-right: 3rem;
+	}
+}

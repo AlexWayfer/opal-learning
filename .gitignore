@@ -1,0 +1,4 @@
+.sass-cache
+Gemfile.lock
+src/lib/jquery*.js
+public/*
